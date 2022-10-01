@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.rbAsom.isChecked = true
 
         binding.btnCalcular.setOnClickListener {
             calcularPropina()
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         var monto : Double = binding.etCoste.text.toString().toDouble()
         var calculo = monto
 
-        if(monto == null){
+        if(monto.toString() == ""){
             binding.tvResult.text = "Ingrese un monto válido"
         }
 
