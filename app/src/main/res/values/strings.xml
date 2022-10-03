@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">TipTime</string>
     <string name="tip_amount">Monto de propina: $ %s</string>
+    <string name="service_cost">Coste del servicio</string>
 </resources>

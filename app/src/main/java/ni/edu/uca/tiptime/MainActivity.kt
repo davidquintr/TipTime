@@ -41,11 +41,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity,"Seleccione una propina válida",Toast.LENGTH_LONG).show()
                 return
             }
-
             if(swRound.isChecked){
                 calculo = round(calculo)
             }
-
             tvResult.text = getString(R.string.tip_amount,calculo.toString())
         }
     }
